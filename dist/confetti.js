@@ -60,7 +60,7 @@ confetti.js by mitch-mueller
             }
 
             //if logging is enabled, print this once a second
-            if (opts.log && stats.frames % config.frameRate == 0) {
+            if (opts.log && stats.frames % opts.frameRate == 0) {
                 var output1 = "%c Konfetti ";
                 var output2 = "%c Total Flakes: ";
                 var output3 = "%c " + stats.totalFlakesGenerated + " ";
@@ -87,7 +87,7 @@ confetti.js by mitch-mueller
             stats.frames++;
         };
 
-        window.setInterval(function() {loop(context, flakes);}, 1000/config.frameRate);
+        window.setInterval(function() {loop(context, flakes);}, 1000/opts.frameRate);
 
 
         return this;
