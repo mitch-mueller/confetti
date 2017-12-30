@@ -22,7 +22,7 @@ confetti.js by mitch-mueller
         //TODO ::: 1920
         var flakeFactory = function(i) {
             flakes[i] = {
-                "x": Math.floor((Math.random() * (1920-opts.maxSize)) + opt.maxSize),
+                "x": Math.floor((Math.random() * (1920-opts.maxSize)) + opts.maxSize),
                 "y": 0,
                 "size": Math.floor((Math.random() * opts.maxSize) + opts.minSize),
                 "speed": Math.floor((Math.random() * opts.maxSpeed) + opts.minSpeed),
