@@ -2,6 +2,10 @@
   "name": "confetti",
   "version": "1.0.0",
   "description": "A jQuery plugin that brings confetti onto your page",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
   "main": "dist/confetti",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
