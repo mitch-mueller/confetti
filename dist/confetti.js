@@ -7,12 +7,17 @@ confetti.js by mitch-mueller
         var targetWidth = $(this).innerWidth();
         var targetHeight = $(window).innerHeight();
 
-        var canvas = $("<canvas/>", {'position':'fixed', 'z-index':'1000000', 'top':'0', 'left':'0', 'class': 'confetti'})
+        var canvas = $("<canvas/>")
             .prop({
                 width: targetWidth,
                 height: targetHeight
             })
-            .appendTo(this);
+            .css({
+                "position": "fixed",
+                "z-index": "10000000"
+            })
+            .appendTo(this)
+            .get(0);
 
         var context = canvas.getContext("2d");
 
