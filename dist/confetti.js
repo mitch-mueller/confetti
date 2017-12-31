@@ -4,7 +4,7 @@ confetti.js by mitch-mueller
 (function ($) {
     $.fn.confetti = function( options ) {
 
-        var targetWidth = $(this).innerWidth();
+        var targetWidth = $(window).innerWidth();
         var targetHeight = $(window).innerHeight();
 
         var canvas = $("<canvas/>")
