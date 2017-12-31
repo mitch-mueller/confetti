@@ -14,7 +14,9 @@ confetti.js by mitch-mueller
             })
             .css({
                 "position": "fixed",
-                "z-index": "10000000"
+                "z-index": "10000000",
+                "top": "0",
+                "left": "0"
             })
             .appendTo(this)
             .get(0);
