@@ -4,7 +4,14 @@ confetti.js by mitch-mueller
 (function ($) {
     $.fn.confetti = function( options ) {
 
-        var canvas = document.getElementById("konfetti");
+        var targetWidth = this.innerWidth();
+        var targetHeight = this.innerHeight();
+
+        var anvas = $("<canvas/>", {'position':'fixed', 'z-index':'1000000', 'top':'0', 'left':'0', 'class': 'confetti'})
+            .width(targetWidth)
+            .height(targetHeight)
+            .appendTo(this);
+            
         var context = canvas.getContext("2d");
 
         //default options
